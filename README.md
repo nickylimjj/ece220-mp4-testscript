@@ -7,4 +7,6 @@ Instructions:
 3) run `make` to compile the files
 4) run `make test` to test it alongside the eval.sh
 
+You can also run `make clean` to remove all the dependencies.
+
 Have fun!
