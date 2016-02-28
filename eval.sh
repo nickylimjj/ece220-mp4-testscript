@@ -10,9 +10,9 @@ tests=(testone.txt testtwo.txt testthree.txt testfour.txt)
 EXE=mp4
 
 # tutorial: colors
-Gre='\033[0;32m';
+Gre='\033[32m';
 Def='\033[0m';
-Red='\033[0;31m';
+Red='\033[31m';
 
 # tutorial: loop through the number of tests
 for i in {0..3}; do
