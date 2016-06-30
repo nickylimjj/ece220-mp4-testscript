@@ -5,8 +5,8 @@
 #set -o pipefail
 # tutorial: assigning data variable
 score=0
-out=(outone outtwo outthree outfour)
-tests=(testone.txt testtwo.txt testthree.txt testfour.txt)
+out=(outone outtwo outthree outfour outfive)
+tests=(testone.txt testtwo.txt testthree.txt testfour.txt testfive.txt)
 EXE=mp4
 
 # tutorial: colors
@@ -15,7 +15,7 @@ Def='\033[0m';
 Red='\033[31m';
 
 # tutorial: loop through the number of tests
-for i in {0..3}; do
+for i in {0..4}; do
 
     # tutorial: check if it exits cleanly (if so, you will get $? == 0)
     res=$(./$EXE ${tests[i]}| diff ${out[i]} -)
